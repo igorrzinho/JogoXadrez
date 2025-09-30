@@ -17,7 +17,7 @@ namespace JogoXadrez
                     }
                     else
                     {
-                        System.Console.Write(tab.peca(i, j) + " ");
+                        System.Console.Write(" "+ tab.peca(i, j) + " ");
                     }
                 }
                 System.Console.WriteLine();

@@ -1,4 +1,5 @@
 ﻿using tabuleiro;
+using xadrez;
 
 namespace JogoXadrez
 {
@@ -7,7 +8,19 @@ namespace JogoXadrez
         static void Main(string[] args)
         {
             Tabuleiro tab = new Tabuleiro(8, 8);
-            Tela.ImprimirTabuleiro(tab);  
+
+            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
+            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(2, 4));
+            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(5, 6));
+
+
+            Tela.ImprimirTabuleiro(tab); 
+
+
+
+
+
         }
     }
 }
