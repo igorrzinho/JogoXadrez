@@ -7,12 +7,17 @@ namespace tabuleiro
         public int qtdMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        public Peca( Tabuleiro tab, Cor cor)
+        public Peca(Tabuleiro tab, Cor cor)
         {
             this.posicao = null;
             this.cor = cor;
             this.qtdMovimentos = 0;
             this.tab = tab;
+        }
+
+        public void incrementarQtdMovimentos()
+        {
+            qtdMovimentos++;
         }
     }
 }
