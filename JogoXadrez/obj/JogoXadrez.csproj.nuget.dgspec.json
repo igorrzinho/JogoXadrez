@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IgordeJesusSilva\\OneDrive - Diretório Padrão\\Documentos\\Exercicios\\JogoXadrez\\JogoXadrez\\JogoXadrez.csproj": {}
+    "/workspaces/JogoXadrez/JogoXadrez/JogoXadrez.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IgordeJesusSilva\\OneDrive - Diretório Padrão\\Documentos\\Exercicios\\JogoXadrez\\JogoXadrez\\JogoXadrez.csproj": {
+    "/workspaces/JogoXadrez/JogoXadrez/JogoXadrez.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IgordeJesusSilva\\OneDrive - Diretório Padrão\\Documentos\\Exercicios\\JogoXadrez\\JogoXadrez\\JogoXadrez.csproj",
+        "projectUniqueName": "/workspaces/JogoXadrez/JogoXadrez/JogoXadrez.csproj",
         "projectName": "JogoXadrez",
-        "projectPath": "C:\\Users\\IgordeJesusSilva\\OneDrive - Diretório Padrão\\Documentos\\Exercicios\\JogoXadrez\\JogoXadrez\\JogoXadrez.csproj",
-        "packagesPath": "C:\\Users\\IgordeJesusSilva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IgordeJesusSilva\\OneDrive - Diretório Padrão\\Documentos\\Exercicios\\JogoXadrez\\JogoXadrez\\obj\\",
+        "projectPath": "/workspaces/JogoXadrez/JogoXadrez/JogoXadrez.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/JogoXadrez/JogoXadrez/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IgordeJesusSilva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
