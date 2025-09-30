@@ -4,7 +4,7 @@ namespace JogoXadrez
 {
     class Tela
     {
-        public static void ImprimirTabuleiro(Tabuleiro tab)
+        public static void imprimirTabuleiro(Tabuleiro tab)
         {
             for (int i = 0; i < 8; i++)
             {
