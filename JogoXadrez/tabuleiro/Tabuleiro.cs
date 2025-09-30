@@ -17,5 +17,10 @@ namespace tabuleiro
         {
             return pecas[linha, coluna];
         }
+
+        public void ColocarPeca()
+        {
+            
+        }
     }
 }
