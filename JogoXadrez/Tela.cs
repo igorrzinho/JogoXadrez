@@ -38,7 +38,7 @@ namespace xadrez_console
             Console.WriteLine();
             Console.Write("Pretas: ");
             ConsoleColor aux = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Blue;
             imprimirConjunto(partida.pecasCapturadas(Cor.Preta));
             Console.ForegroundColor = aux;
             Console.WriteLine();
@@ -56,28 +56,33 @@ namespace xadrez_console
 
         public static void imprimirTabuleiro(Tabuleiro tab)
         {
+            Console.WriteLine("-+-----------------+-");
 
             for (int i = 0; i < tab.linhas; i++)
             {
-                Console.Write(8 - i + " ");
+                Console.Write(8 - i + "| ");
                 for (int j = 0; j < tab.colunas; j++)
                 {
                     imprimirPeca(tab.peca(i, j));
                 }
+                Console.Write("|");
                 Console.WriteLine();
             }
-            Console.WriteLine("  a b c d e f g h");
+            Console.WriteLine("-+-----------------+-");
+            Console.WriteLine(" | A B C D E F G H |");
         }
 
         public static void imprimirTabuleiro(Tabuleiro tab, bool[,] posicoePossiveis)
         {
 
             ConsoleColor fundoOriginal = Console.BackgroundColor;
-            ConsoleColor fundoAlterado = ConsoleColor.DarkGray;
+            ConsoleColor fundoAlterado = ConsoleColor.Green;
 
+                Console.WriteLine("-+-----------------+-");
             for (int i = 0; i < tab.linhas; i++)
             {
-                Console.Write(8 - i + " ");
+
+                Console.Write(8 - i + "| ");
                 for (int j = 0; j < tab.colunas; j++)
                 {
                     if (posicoePossiveis[i, j])
@@ -91,9 +96,12 @@ namespace xadrez_console
                     imprimirPeca(tab.peca(i, j));
                     Console.BackgroundColor = fundoOriginal;
                 }
+                
+                Console.Write("|");
                 Console.WriteLine();
             }
-            Console.WriteLine("  a b c d e f g h");
+            Console.WriteLine("-+-----------------+-");
+            Console.WriteLine(" | A B C D E F G H |");
             Console.BackgroundColor = fundoOriginal;
         }
 
@@ -121,7 +129,7 @@ namespace xadrez_console
                 else
                 {
                     ConsoleColor aux = Console.ForegroundColor;
-                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write(peca);
                     Console.ForegroundColor = aux;
                 }
